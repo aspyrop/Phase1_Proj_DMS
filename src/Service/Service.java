@@ -13,7 +13,7 @@ public class Service {
 	static final String COMPANY_NAME = "Lockers Pvt. Ltd";
 	static final String APPLICATION_NAME = "DMS | Digitization Management System";
 	static final String ACTIVE_PATH = 
-			"C:\\Users\\aspyr\\git\\repository\\JavaTraining\\Phase1_Proj_DMS\\SampleFiles";
+			"C:\\Users\\aspyr\\git\\repository\\JavaTraining\\xPhase1_Proj_DMS\\SampleFiles";
 	static final String SYSTEM_OUTPUT_SYMBOL = " [DMS] ===> ";
 	
 	public Service(Database database) {
@@ -27,6 +27,9 @@ public class Service {
 	//------------------------------------------------------------------
 	public Database LoadDatabase() {
 		File dirObj = new File(ACTIVE_PATH);
+		if (dirObj.listFiles() == null) {
+			return null;
+		}
 		for (File f : dirObj.listFiles()) {
 			this.database.add(new FileToDigitize(f));
 		}
@@ -234,9 +237,17 @@ public class Service {
 	}	
 	
 	//------------------------------------------------------------------
+	public void displayMsgFolderNotValid() {
+		System.out.print(SYSTEM_OUTPUT_SYMBOL);
+		System.out.println(ACTIVE_PATH + "\n");
+		System.out.println("Above 'static final String ACTIVE_PATH' for the active folder, is NOT valid!");
+		System.out.println("Please specify in code a valid path for 'static final String ACTIVE_PATH'.\n");
+	}
+
+	//------------------------------------------------------------------
 	public void displayMsgWrongChoice() {
 		System.out.print(SYSTEM_OUTPUT_SYMBOL);
 		System.out.println("Choice NOT valid.\n");
 	}
-	
+		
 }
