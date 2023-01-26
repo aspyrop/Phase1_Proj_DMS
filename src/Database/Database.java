@@ -2,7 +2,6 @@ package Database;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
 import Entity.FileToDigitize;
 
 public class Database {

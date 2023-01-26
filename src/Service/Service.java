@@ -12,7 +12,8 @@ public class Service {
 	
 	static final String COMPANY_NAME = "Lockers Pvt. Ltd";
 	static final String APPLICATION_NAME = "DMS | Digitization Management System";
-	static final String ACTIVE_PATH = "C:\\Users\\aspyr\\eclipse-workspace\\Phase1_Proj_DMS\\LockersDMS";
+	static final String ACTIVE_PATH = 
+			"C:\\Users\\aspyr\\git\\repository\\JavaTraining\\Phase1_Proj_DMS\\SampleFiles";
 	static final String SYSTEM_OUTPUT_SYMBOL = " [DMS] ===> ";
 	
 	public Service(Database database) {
@@ -181,7 +182,7 @@ public class Service {
 		String stripeElement = "-";
 		String activePath = "Active Folder: " + ACTIVE_PATH;
 
-		byte maxWidth = 80;
+		byte maxWidth = 90;
 		
 		System.out.println();
 		System.out.println(" ".repeat(maxWidth - 1) + "-");
