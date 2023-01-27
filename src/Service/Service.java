@@ -13,7 +13,7 @@ public class Service {
 	static final String COMPANY_NAME = "Lockers Pvt. Ltd";
 	static final String APPLICATION_NAME = "DMS | Digitization Management System";
 	static final String ACTIVE_PATH = 
-			"C:\\Users\\aspyr\\git\\repository\\JavaTraining\\xPhase1_Proj_DMS\\SampleFiles";
+			"C:\\Users\\aspyr\\git\\repository\\JavaTraining\\Phase1_Proj_DMS\\SampleFiles";
 	static final String SYSTEM_OUTPUT_SYMBOL = " [DMS] ===> ";
 	
 	public Service(Database database) {
