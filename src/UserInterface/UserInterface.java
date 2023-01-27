@@ -67,10 +67,12 @@ public class UserInterface {
 							exitOperationsMenu = true;
 							break;
 						
-						//******************************************************
-						//    DELETE CASE 11 BEFORE ASSESSMENT'S SUBMISSION
-						//******************************************************
 						case 11: // OPERATIONS MENU: Display current database
+							//******************************************************
+							//   Case 11 hidden to FILE OPERATIONS MENU, used for
+							//   testing purposes (display the files of the database).
+							//   NOTE: REMOVE BEFORE APPLICATION RELEASE.
+							//******************************************************
 							srvObj.displayFileNames();
 							break;
 							
