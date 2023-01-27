@@ -90,6 +90,7 @@ public class UserInterface {
 					srvObj.displayMsgWrongChoice();
 					
 				} // // end switch MAIN MENU
+				
 			} // end while related to MAIN MENU
 		
 		} // end else (i.e. dbObj != null)
@@ -97,4 +98,5 @@ public class UserInterface {
 		srvObj.applicationExitMessage();
 		
 	} // end of public static void main
+	
 } // end of public class UserInterface
